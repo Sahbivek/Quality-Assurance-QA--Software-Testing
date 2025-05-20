@@ -1,0 +1,55 @@
+Test Scenario ID,Recuirement ID,Features,Test Scenario Description,Priority
+TS_01,4.1.4,UI,Verify that user is able to view all the fields,High
+TS_02,,,Verify that bottons and form fields are accessible or not.,High
+TS_03,,,Verify that required fields contains asterisk (*) or not.,High
+TS_04,,,Verify that error message are displayed for required fields when left blank.,High
+TS_05,,,Verify that proper error message is displayed when invalid information is entered.,Medium
+TS_06,,,Verify that proper success message is displayed when membership is created with valid information.,High
+TS_07,,,Verify that fields are aligned properly across different resolutions and devices.,High
+TS_08,,,Verify that form labels are visible and clear.,Low
+TS_09,,,"Verify that responsiveness of the ""Apply Membership"" page on diiferent devices(mobile,tablet,desktop).",High
+,,,,
+TS_10,,Add Department,Verify that the  name field can accept a valid  name.,High
+TS_11,,,Verify that the  Name(NP) field can accept a valid Name(NP) .,High
+TS_12,,,Verify that error message should popup upon invalid  Name .,Medium
+TS_13,,,Verify if Add User button is available.,High
+TS_14,,,Verify that all the fields of add user is available.,High
+TS_15,,,Verify that all the required fields contains asterik (*).,Medium
+TS_16,,,Proper validation messages should be displayed if the user enters an incorrect value in any of the form fields.,High
+TS_17,,,Verify that Save button is enabled after all mandatory/required are entered.,High
+TS_18,,,Verfiy that proper validation messages are displayed if invalid data is entered.,Medium
+TS_19,,,Verify that confirmation message pops up after submitting the form with valid data.,Medium
+TS_20,,,"Verify that Name, Name(NP),Address,Address(NP) are unique.",High
+TS_21,,,Verify that previous entered data are cleared after successful user creation.,High
+TS_22,,,Verify that every input fields are clickable or not.,Medium
+TS_23,,,Verify that cache is being cleared or not when back button is clicked.,High
+TS_24,,,Verfiy that user is not created when blank form is submitted.,Medium
+TS_25,,,Verify that the successfully created user is displayed in datatable or not.,High
+TS_26,,,Verify that recently added data is populated at the begining.,High
+TS_27,,,,
+,,,,
+TS_28,,Edit Department,Verify that the Edit department form can be accessed successfully.,High
+TS_29,,,Verify that close button is clickable .,High
+TS_30,,,Verify that edit icon is clickable,High
+TS_31,,,Verify that after editing the changes are correct,Medium
+TS_32,,,Verify that Edit Name with valid details.,Medium
+TS_33,,,Verify that Edit Name(NP) to an existing one.,High
+TS_34,,,Verify that Edit user with invalid Address format.,Medium
+TS_35,,,Verify that  role is updated when all mandatory fields are filled .,High
+TS_36,,,Verify that Edit user with special characters in Name.,Medium
+TS_37,,,Verify that Edit user while another edit is in progress.,High
+TS_38,,,Verify that Description field is click able .,Low
+TS_39,,,Verify that active user can be shown in upper side.,High
+TS_40,,,Verify that status button is click able or not,High
+,,,,
+TS_41,,Delete Department,Verify that Delete an existing user.,High
+TS_42,,,Verify that Delete a department and refresh the page.,Medium
+TS_43,,,Verify that Delete a non-existent user.,Medium
+TS_44,,,Verify that  the confirmation message pops up after clicking the delete button,High
+TS_45,,,Verify that Delete an admin user (restricted).,Medium
+TS_46,,,Verify that Delete multiple users at once.,High
+TS_47,,,Verify that Delete a department while another deletion is in progress.,Medium
+TS_48,,,Verify that Delete a department with active sessions.,Medium
+TS_49,,,"Verify that Delete a department with dependencies (e.g., assigned tasks).",High
+TS_50,,,Verify that the user can select multiple department and click the Delete All button.,High
+TS_51,,,Verify that clicking the delete button shows a popup message.,Medium

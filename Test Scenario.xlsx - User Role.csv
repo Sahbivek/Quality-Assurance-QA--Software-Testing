@@ -1,0 +1,44 @@
+Test Scenario ID,Recuirement ID,Features,Test Scenario Description,Priority
+TS_01,4.1.3,UI,Verify that user is able to view all the fields,High
+TS_02,,,Verify that bottons and form fields are accessible or not.,Medium
+TS_03,,,Verify that required fields contains asterisk (*) or not.,High
+TS_04,,,Verify that error message are displayed for required fields when left blank.,High
+TS_05,,,Verify that proper error message is displayed when invalid information is entered.,High
+TS_06,,,Verify that proper success message is displayed when membership is created with valid information.,Medium
+TS_07,,,Verify that fields are aligned properly across different resolutions and devices.,High
+TS_08,,,Verify that form labels are visible and clear.,Low
+TS_09,,,"Verify that responsiveness of the ""Apply Membership"" page on diiferent devices(mobile,tablet,desktop).",High
+,,,,
+TS_10,,Add User Role,Verify that all the fields of add user is available.,High
+TS_11,,,Verify that all the required fields contains asterik (*).,High
+TS_12,,,Proper validation messages should be displayed if the user enters an incorrect value in any of the form fields.,Medium
+TS_13,,,Verify that Save button is enabled after all mandatory/required fields are entered.,High
+TS_14,,,Verify that error message should prompt invalid user.,High
+TS_15,,,Verify that the system prevents adding dupicate user with the same name,Medium
+TS_16,,,Verify that system handles both the maximum and minimum character lengths for the user.,High
+TS_17,,,Verify that select roles can be selected using checkboxes.,Medium
+TS_18,,,Verify that user field can be left  but select the roles field.,High
+TS_19,,,Verify that the selected roles for the new user  are saved automatically.,High
+TS_20,,,Verify that the form can be submitted successfully when all required fields are filled correctly.,High
+TS_21,,,Verify that the newly add  user is displayed in the user role management.,High
+TS_22,,,Verify that a success message is displayed after adding a user.,Medium
+TS_23,,,Verify that error message should be displayed when required fields are left empty.,High
+TS_24,,,Verify that error message can appear when invalid data is entered.,High
+TS_25,,,Verify that error message are displayed for  each field left blank when attempting to submit the form.,High
+,,,,
+TS_26,,Edit User Role,Verify that the Edit Role form can be accessed successfully.,High
+TS_27,,,Verify that close button is clickable or not .,High
+TS_28,,,Verify that edit icon is clickable,High
+TS_29,,,Verify that after editing the changes are correct,Medium
+TS_30,,,Verify that the user can be updated in the user field.,High
+TS_31,,,Verify that select role can be modified by selecting or deselecting checkboxes.,Medium
+TS_32,,,Verify that the form validates input and prevents submission if required fields are left empty.,High
+TS_33,,,Verify that user can be updated  without any duplication.,High
+TS_34,,,Verify that form cannot be submitted if required field is left empty.,High
+TS_35,,,Verify that error message is shown if the user exceeds the maximum character .,Medium
+TS_36,,,Verify that error message is shown if the user name have  maximum character .,Medium
+TS_37,,,Verify that the form cannot be submitted if select roles are not selected.,High
+TS_38,,,Verify that the updated select roles are saved correctly after editing the role .,High
+TS_39,,,Verify that changes are reflected immediately in the system without needing to refresh the page.,High
+TS_40,,,Verify that success message is displayed after the user has been successfully edited.,Medium
+TS_41,,,Verify that updated user can be mention in the top in the user role management.,High

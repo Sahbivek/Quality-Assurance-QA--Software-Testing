@@ -1,0 +1,65 @@
+Test Scenario ID,Recuirement ID,Features,Test Scenario Description,Priority
+TS_01,4.1.2,UI,Verify that user is able to view all the fields,High
+TS_02,,,Verify that bottons and form fields are accessible or not.,High
+TS_03,,,Verify that required fields contains asterisk (*) or not.,High
+TS_04,,,Verify that error message are displayed for required fields when left blank.,Medium
+TS_05,,,Verify that proper error message is displayed when invalid information is entered.,High
+TS_06,,,Verify that proper success message is displayed when membership is created with valid information.,Medium
+TS_07,,,Verify that fields are aligned properly across different resolutions and devices.,High
+TS_08,,,Verify that form labels are visible and clear.,Low
+TS_09,,,"Verify that responsiveness of the ""Apply Membership"" page on diiferent devices(mobile,tablet,desktop).",High
+TS_10,,,Verify that all the required fields contains asterik (*).,High
+TS_11,,,Verify if Add User button is available.,Medium
+TS_12,,,Verify that all the fields of add user is available,High
+,,,.,
+TS_13,,Add User,Verify that the  name field can accept a valid  name.,High
+TS_14,,,Verify that the  Username field can accept a valid  Username.,Medium
+TS_15,,,Verify that error message should popup upon invalid  name.,High
+TS_16,,,Proper validation messages should be displayed if the user enters an incorrect value in any of the form fields.,High
+TS_17,,,Verify that Save button is enabled after all mandatory/required are entered.,Medium
+TS_18,,,Verfiy that proper validation messages are displayed if invalid data is entered.,High
+TS_19,,,Verify that confirmation message pops up after submitting the form with valid data.,Low
+TS_20,,,"Verify that username,email address and mobile number are unique.",High
+TS_21,,,Verify that previous entered data are cleared after successful user creation.,Medium
+TS_22,,,Verfiy that mobile number accepts numbers starting from 97/98.,High
+TS_23,,,Verify that every input fields are clickable or not.,High
+TS_24,,,Verify that cache is being cleared or not when back button is clicked.,High
+TS_25,,,Verfiy that user is not created when blank form is submitted.,Medium
+TS_26,,,Verify that the successfully created user is displayed in datatable or not.,High
+TS_27,,,Verify that recently added data is populated at the begining.,High
+TS_28,,,,
+TS_29,,,,
+TS_30,,,,
+,,,,
+,,,,
+TS_31,,Edit User,Verify that the Edit Role form can be accessed successfully.,High
+TS_32,,,Verify that close button is clickable or not .,High
+TS_33,,,Verify that edit icon is clickable,Medium
+TS_34,,,Verify that after editing the changes are correct,High
+TS_35,,,Verify that users details are updated properly with valid details.,Medium
+TS_36,,,Verify that Edit username to an existing one.,Medium
+TS_37,,,Verify that email address is not updated when invalid email format is used.,High
+TS_38,,,Verify that role is updated when all mandatory fields are filled .,High
+TS_39,,,Verify that role of the user is checked with special characters in username.,High
+TS_40,,,Verify that Update phone number with letters.,High
+TS_41,,,Verify that Edit user while another edit is in progress.,Medium
+TS_42,,,Verify that Department field is click able or not .,Low
+TS_43,,,Verify that close button is workable or not,Medium
+TS_44,,,Verify that active user can be shown in upper side.,High
+TS_45,,,Verify that status button is click able or not,High
+,,,,
+TS_45,,Delete User,Verify that Delete an existing user.,High
+TS_46,,,Verify that Delete a user and refresh the page.,Medium
+TS_47,,,Verify that Delete a non-existent user.,Low
+TS_48,,,Verify that  the confirmation message pops up after clicking the delete button,High
+TS_49,,,Verify that Delete an admin user (restricted).,High
+TS_50,,,Verify that Delete multiple users at once.,High
+TS_51,,,Verify that Delete a user while another deletion is in progress.,High
+TS_52,,,Verify that Delete a user with active sessions.,Medium
+TS_53,,,"Verify that Delete a user with dependencies (e.g., assigned tasks).",Medium
+TS_54,,,Verify that the user can select multiple roles and click the Delete All button.,High
+TS_55,,,Verify that clicking the delete button shows a popup message.,Medium
+,,,,
+TS_56,,Search Role,Verify that if proper  message is displayed when valid information is enetered. ,High
+TS_57,,,Verify that if proper error message is displayed when invalid information is enetered. ,Medium 
+TS_58,,,Verify that if proper error message is displayed on required fields when blank form is submitted.,High

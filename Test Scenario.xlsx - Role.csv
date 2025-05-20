@@ -1,0 +1,55 @@
+Test Scenario ID,Requirement ID,Feature,Test Scenario Description,Priority
+TS_01,4.1.1,UI,Verify that user is able to view all the fields,High
+TS_02,,,Verify that bottons and form fields are accessible or not.,High
+TS_03,,,Verify that required fields contains asterisk (*) or not.,High
+TS_04,,,Verify that error message are displayed for required fields when left blank.,High
+TS_05,,,Verify that proper error message is displayed when invalid information is entered.,High
+TS_06,,,Verify that proper success message is displayed when membership is created with valid information.,Medium
+TS_07,,,Verify that fields are aligned properly across different resolutions and devices.,High
+TS_08,,,Verify that form labels are visible and clear.,Medium
+TS_09,,,"Verify that responsiveness of the ""Apply Membership"" page on diiferent devices(mobile,tablet,desktop).",High
+,,,,
+TS_10,,Add Role,Verify that the role name field can accept a valid role name.,Medium
+TS_11,,,Verify that error message should popup upon invalid role name.,High
+TS_12,,,Verify that the system prevents adding dupicate roles with the same name,High
+TS_13,,,Verify that system handles both the maximum and minimum character lengths for the role name.,Medium
+TS_14,,,Verify that permission can be selected using checkboxes.,Low
+TS_15,,,Verify that the sub-permission option are automatically checked when the parent permission is selected.,Medium
+TS_16,,,Verify that the selected permission for the new role name  are saved automatically.,Medium
+TS_17,,,Verify that the form can be submitted successfully when all required fields are filled correctly.,High
+TS_18,,,Verify that the newly add name role is displayed in the role list.,High
+TS_19,,,Verify that a success message is displayed after adding a role.,Medium
+TS_20,,,Verify that error message should be displayed when required fields are left empty.,High
+TS_21,,,Verify that error message can appear when invalid data is entered.,High
+TS_22,,,Verify that error message are displayed for  each field left blank when attempting to submit the form.,High
+,,,,
+TS_23,,Edit Role,Verify that the Edit Role form can be accessed successfully.,Medium
+TS_24,,,Verify that close button is clickable .,Medium
+TS_25,,,Verify that edit icon is clickable,High
+TS_26,,,Verify that after editing the changes are correct,High
+TS_27,,,Verify that the role name can be updated in the Role Name field,High
+TS_28,,,Verify that permission can be modified by selecting or deselecting checkboxes.,Medium
+TS_29,,,Verify that the form validates input and prevents submission if required fields are left empty.,High
+TS_30,,,Verify that role name can be updated  without any duplication.,High
+TS_31,,,Verify that form cannot be submitted if required fields are left empty.,Medium
+TS_32,,,Verify that error message is shown if the role name exceeds the maximum character .,High
+TS_33,,,Verify that error message is shown if the role name have  maximum character .,High
+TS_34,,,Verify that the form cannot be submitted if permission are not selected.,Low
+TS_35,,,Verify that the updated permission are saved correctly after editing the role .,Medium
+TS_36,,,Verify that changes are reflected immediately in the system without needing to refresh the page.,Low
+TS_37,,,Verify that success message is displayed after the role has been successfully edited.,High
+TS_38,,,Verify that updated role can be mention in the top or not.,High
+,,,,
+TS_39,,Delete Role,Verify that the delete button is visible for each role in the navigation list.,High
+TS_40,,,Verify that the user can select multiple roles and click the Delete All button.,High
+TS_41,,,Verify that clicking the delete button shows a popup message.,Medium
+TS_42,,,"Verify that after confirming the delete action, the selected role(s) are removed from the role management list",High
+TS_43,,,Verify that a success message is displayed after successfully deleting a role or multiple roles.,High
+TS_44,,,Verify that the user can deletes multipe role once at a time and confirming deletion.,Medium
+TS_45,,,Verify that role can be successfully deleted and no longer appear in the list.,High
+TS_46,,,"Verify that once a role is deleted, it cannot be accessed by searching or navigation through the system.",High
+TS_47,,,Verify that a prompt asking for deletion confirmation appears when the delete button is clicked.,Medium
+,,,,
+TS_48,,Search Role,Verify that if proper  message is displayed when valid information is enetered. ,High
+TS_49,,,Verify that if proper error message is displayed when invalid information is enetered. ,Medium
+TS_50,,,Verify that if proper error message is displayed on required fields when blank form is submitted.,High
