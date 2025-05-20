@@ -1,0 +1,356 @@
+Test Case ID,Trace No.,Test Case Title,Test Case Description,Pre Conditions,Test Steps,Test Data,Expected Results,Actual Results,Status,Evidence,Comments
+TC-BRD-01,,Authentication and authorization of the users.,To verify if the authorized user can enter the software with the correct User ID and Password.,"1. The software must be correctly installed in the user's system.
+2. User details including their User IDs and Passwords must be stored in the software.
+3. All the test cases for Login and Logout Module(LILO) must be passed.","1. Open software.
+2. Enter User ID and Password.
+3. Observe.",,1. The user should be directed to the software dashboard page upon successful login.,,,,
+TC-BRD-02,,Verification on Batch Requisition Details placement.,To verify if the Batch Requisition Details menu is displayed in the list of the Requisition Dispensing sub-module.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.","1. Click on Requisition Dispensing Sub-module.
+2. Observe.",,1. The Batch Requisition Details menu should be displayed in the Requisition Dispensing sub-module.,,,,
+TC-BRD-03,,Navigate the user to the Batch Requisition Details main UI.,To verify if a user lands on the Batch Requisition Details main UI.,1. User with designated role must be logged in to the software.,"1. Select the Production Processing Module.
+2. Select the Requisition Dispensing Sub-Module.
+3. Click on the Batch Requisition Details menu.
+3. Observe.",,1. The user should be land on the Batch Requisition Details main UI.,,,,
+Requisition Details main UI,,,,,,,,,,,
+TC-BRD-04,,Overall UI of the Batch Requisition Details page.,"To verify if the design, alignment, button and colors of the Batch Requisition Details page UI is suitable for the software.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.","1. Observe the UI of the Batch Requisition Details page by verifying following features
+ - Overall design of the UI
+ - UI and placements of the buttons
+ - Placement of the textbox and dropdown. 
+ - Colors of the UI",,"1. The UI design, alignment of different sections and colors in the Batch Requisition Details page should be suitable for the software.",,,,
+TC-BRD-05,,Sections of Batch Requisition Details page.,"To verify if the main UI of Batch Requisition Details page contains the following sections:
+- A searchable dropdown labeled Product Name (Product Code) in the header section.
+- A Batch Details Table in the body section.
+- A ‘Batch Requisition Details’ button in the button panel of the footer section.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.",1. Observe the sections in main UI of Batch Requisition Details page .,,"1. The main UI of Batch Requisition Details page contains the following sections:
+- A searchable dropdown labeled Product Name (Product Code) in the header section.
+- A Batch Details Table in the body section.
+- A ‘Batch Requisition Details’ button in the button panel of the footer section.",,,,
+TC-BRD-06,,Display of Product Batches with Specific Statuses upon Product Selection in Batch Requisition Details Table.,"To verify if upon selecting the product from the Product Name(Product Code) dropdown, the product batches with “Batch Generated” and “Potency Verification Rejected” statuses is displayed in the Batch Details Table in the Batch Requisition Details page.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.","1. Click on the Product Name (Product Code) dropdown.
+2. Select a valid product from the dropdown.
+3. Observe.",,"1. Upon selecting the product from the Product Name(Product Code) dropdown, the product batches with “Batch Generated” and “Potency Verification Rejected” statuses should be displayed in the Batch Details Table in the Batch Requisition Details page.",,,,
+TC-BRD-07,,Verify Redirection and Pre-Selection of Product Batch from Batch Creation Pending Task to Batch Requisition Details Page,"To verify if upon clicking the data row of a product batch with the “Batch Generated” and “Potency Verification Rejected” statuses in the Batch Details Table of the Batch Creation Pending Task page within the main UI of the Batch Creation sub-module, the user is redirected to the Batch Details Table of the Batch Requisition Details page, where the selected product batch is pre-selected.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.","1. Navigate to the Batch Creation Pending Task page within the main UI of the Batch Creation sub-module.
+2. In the Batch Details Table,Navigate to the product batch with the status Batch Generated or Potency Verification Rejected.
+3. Click on the data row corresponding to that batch.
+4. Observe.",,"1. Upon clicking the data row of a product batch with the “Batch Generated” and “Potency Verification Rejected” statuses in the Batch Details Table of the Batch Creation Pending Task page within the main UI of the Batch Creation
+sub-module, the user should be redirected to the Batch Details Table of the Batch Requisition Details page, where the selected product batch should be pre-selected.",,,,
+TC-BRD-08,,Display of Requisition Details Pop-Up form on Selecting a Product Batch and Clicking the ‘Batch Requisition Details’ Button.,"To verify if when the user selects a data row of the product batch in the Batch Details Table and clicks the ‘Batch Requisition Details’ button, a Requisition Details pop-up form is displayed.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.","1. In the Batch Details Table, select a data row representing a product batch.
+2. Click the Batch Requisition Details button.
+3. Observe.",,"1. When the user selects a data row of the product batch in the Batch Details Table and clicks the ‘Batch Requisition Details’ button, a Requisition Details pop-up form should be displayed.",,,,
+TC-BRD-09,,Sections of Requisition Details popup form.,"To verify if the Batch Requisition Details pop-up form is display the following elements in the different sections of the form:
+- Material Requisition Number in the header section.
+- A Raw Materials Requisition Details Table in the body section.
+- A ‘Save’ button in the button panel of the footer section","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.",1. Observe the Requisition Details pop-up form.,,"1. The Batch Requisition Details pop-up form should display the following elements in the different sections of the form:
+- Material Requisition Number in the header section.
+- A Raw Materials Requisition Details Table in the body section.
+- A ‘Save’ button in the button panel of the footer section",,,,
+TC-BRD-10,,Display of Material Requisition Number in the header section after saving Batch Requisition Detail Page,To verify if Material Requisition Number is displayed in the header section after the Batch Requisition Detail page is saved.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.","1. Click on the Save button in the footer section of Batch Requisition Details page.
+2. Observe the header section of the Requisition Details popup form.
+
+",,1. Material Requisition Number should be displayed in the header section after the Batch Requisition Detail page should be saved.,,,,
+TC-BRD-11,,Display of Raw Materials Requisition Details Table Below Material Requisition Number in Batch Requisition Details Pop-Up form.,To verify if a Raw Materials Requisition Details Table is displayed below the Material Requisition Number in the body section of the Requisition Details pop-up form.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.","1. Navigate to the page containing the Requisition Details Table.
+2. Select a product batch and click on the Batch Requisition Details button.
+3. Observe.",,"1. A Raw Materials Requisition Details Table should be displayed below the
+Material Requisition Number in the body section of the Batch Requisition
+Details pop-up form.",,,,
+TC-BRD-12,,Display of Raw Materials in Parent-Child Tree Structure by Type (Active/Inactive) in Batch Requisition Details.,"To verify if the list of raw materials with ‘Active’ and ‘Inactive’ types, according to the Master Formula, along with their requisition details, is displayed in a parent-child tree structure","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.",1. Observe the Raw material details in Parent-Child Tree structure.,,"1. The list of raw materials with ‘Active’ and ‘Inactive’ types, according to the
+Master Formula, along with their requisition details, should be displayed in a parent-child tree structure",,,,
+TC-BRD-13,,Functionality of Raw Material Details Using Expand(+) and Minimize(-) Buttons,"To verify if an ‘Expand(+)’ and ‘Minimize(-)’ buttons is added in front of the Type:Active label. Upon clicking ‘Expand(+)’, the list of materials and their details is displayed, and upon clicking the ‘Minimize(-)’ button, the expanded material details is minimized.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.","1. Navigate to the Expand(+) button next to the Type: Active label.
+2. Click on the Expand(+) button.
+3. Observe that the list of materials and their details is displayed.
+4. Verify that the button icon changes to Minimize(-).
+5. Click on the Minimize(-) button.
+6. Observe that the material details are hidden.",,"1. An ‘Expand(+)’ and ‘Minimize(-)’ buttons should be added in front of the Type:Active and Type: Inactive labels. Upon clicking ‘Expand(+)’, the list of materials and their details should be displayed, and upon clicking the ‘Minimize(-)’ button, the expanded material details should be minimized.",,,,
+TC-BRD-14,,Display Raw Materials Requisition Details Table in Parent-Child Tree Structure for ‘Active’ and ‘Inactive’ Materials,"To verify if the Raw Materials Requisition Details Table is displayed in a parent-child
+tree structure for ‘Active’ and ‘Inactive’ materials..","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.","1. The table display the separate sections for Active and Inactive materials.
+2. Verify that Active materials are displayed as parent nodes in the tree structure.
+3. Verify that Inactive materials are displayed similarly as parent nodes in the tree structure.",,1. Raw Materials Requisition Details Table should be displayed in a parent-child tree structure for ‘Active’ and ‘Inactive’ materials.,,,,
+TC-BRD-15,,Display a column in Parent Structure of Raw Materials Requisition Details Table,"To verify if the parent structure is display the table with following columns:
+- Material Name
+- Quantity
+- UOM
+- Process
+- Adjusted Excipient Quantity","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.",1. At least one material(Active) is available in the requisition list.,,"1. The parent structure should display the table with following columns:
+- Material Name
+- Quantity
+- UOM
+- Process
+- Adjusted Excipient Quantity",,,,
+TC-BRD-16,,Display of respective values in columns of parent structure in the Active Raw Materials Requisition Details Table.,To verify if respective values are displayed in columns of parent structure in the Active Raw Materials Requisition Details Table.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.",1. Observe the parent structure of the Active Raw Materials Requisition Details Table.,,"1. The Material Name column should display the name of the listed material.
+2. The Quantity column should display the required quantity of the Material,fetched from the Master Formula of the product.
+3. The UOM column should display the UOM of the listed material defined in the RM/PM Setup sub-module.
+4. The Process column should display the name of the process which requires selected material as defined in the Master Formula of the product.
+5. The Adjusted Excipient Quantity column should display the adjusted excipient
+quantity of the listed material.",,,,
+TC-BRD-17,,Functionality of Child Structure of Materials using Expand(+) and Minimize(-) Buttons in Material Name Column.,"To verify if an ‘Expand(+)’ and ‘Minimize(-)’ buttons is added in front of the Material Name column. Upon clicking ‘Expand(+)’, the child structure of selected materials and their details is displayed, and upon clicking the ‘Minimize(-)’ button, the expanded child structure and material details is minimized.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one parent material with child data must be available in the Active section.
+8. Expand/Minimize functionality must be enabled in the UI.","1. Navigate to the Material Name column in the parent structure table under Active materials.
+2. Identify a material row that includes an Expand(+) button beside the Material Name.
+3. Click on the Expand(+) button.
+4. Observe that the child structure.
+5. Verify that the icon changes to Minimize(-) after expansion.
+6. Click on the Minimize(-) button.
+7. Observe.",,"1. An ‘Expand(+)’ and ‘Minimize(-)’ buttons should be added in front of the Material Name column. Upon clicking ‘Expand(+)’, the child structure of selected materials and their details should be displayed, and upon clicking the ‘Minimize(-)’ button, the expanded child structure and material details should be minimized.",,,,
+TC-BRD-18,,Display a column in child Structure of Raw Materials Requisition Details Table,"To verify if the child structure is display the table with following columns:
+- GRN
+- Control Number
+- Quantity
+- UOM
+- Material Validity Date
+- Factor","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one material entry must has child data.
+8. Expand/Minimize functionality must be available.","1. Identify a parent material row in the Material Name column with the Expand(+) button.
+2. Click on the Expand(+) button to reveal the child structure for the selected material.
+3. Observe.",,"1. The child structure should display the table with following columns:
+i. GRN
+ii. Control Number
+iii. Quantity
+iv. UOM
+v. Material Validity Date
+vi. Factor",,,,
+TC-BRD-19,,Display of respective values in columns of child structure in the Active Raw Materials Requisition Details Table.,To verify if respective values are displayed in columns of child structure in the Active Raw Materials Requisition Details Table.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one material entry must has child data.
+8. Expand/Minimize functionality must be available.",1. Observe the child structure of the Active Raw Materials Requisition Details Table.,,"1. The GRN column should display the GRN number of the listed control number.
+2. The Control Number column should display the assigned control numbers of the selected material.
+3. The Quantity column should display the required quantity of the material
+according to the listed control number.
+4. The UOM column should display the UOM of the listed material defined in the RM/PM Setup sub-module.
+5. The Material Validity Date should display the material validity date of the
+selected control number for the material as displayed in the Stock Ledger sub-module.
+6. The Factor should display the value auto-populated for raw materials with
+‘Active’ type, by using the formula to get the value, i.e, Factor = (Stated
+Potency/100)*(100-Attribute A)/100*(100-Attribute B)/100*(100-Attribute
+C)/100.",,,,
+TC-BRD-20,,Display of View Control Number Pop-Up on Double-Clicking Parent Data Row,"To verify if upon double-clicking on a data row in the child Active Raw Materials Requisition
+Details Table, a View Control Number pop-up form is displayed.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.","1. Double-click on the selected parent row.
+2. Observe.",,"1. Upon double-clicking on a data row in the child Active Raw Materials Requisition Details Table, a View Control Number pop-up form should be displayed.",,,,
+TC-BRD-21,,"Display the header Information in View Control Number Pop-Up Form
+
+","To verify if the name of the selected material, along with its Quantity per Batch as defined in the Master Formula for the product, is displayed in the header section of View Control Number pop-up form.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one child material with Master Formula data exists.
+8. The View Control Number pop-up must be accessibled by double-clicking a material row.",1. Observe the header section of the Control Number pop-up form. ,,"1. The name of the selected material, along with its Quantity per Batch as defined in the Master Formula for the product, should be displayed in the header section of View Control Number pop-up form.",,,,
+TC-BRD-22,,Tabular format of Control Number Details Table in View Control Number Pop-Up form.,"To verify if the Control Number Details Table for the selected material is added in the body section below the header section and is contain the following columns:
+- Control Number
+- Expiry/Retest Date
+- Inhouse Retest Date
+- Available Quantity
+- Factor
+- Requested Quantity
+- Quantity per Batch
+- UOM","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one material must have associated with the control number data.
+8. The user must be opened the View Control Number pop-up by double-clicking a material row.",1. Observe the View Control Number Details Table.,,"1. The Control Number Details Table for the selected material should be added in the body section below the header section and should contain the following columns:
+- Control Number
+- Expiry/Retest Date
+- Inhouse Retest Date
+- Available Quantity
+- Factor
+- Requested Quantity
+- Quantity per Batch
+- UOM",,,,
+TC-BRD-23,,Display of respective values in columns of View Control Number Details Table.,To verify if respective values are displayed in columns of View Control Number Details Table.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one material must have associated with the control number data.
+8. The user must be opened the View Control Number pop-up by double-clicking a material row.",1. Observe the View Control Number Details Table.,,"1. The Control Number column should display the list of control numbers of the materials with “Active” status according to the priority set in the Stock Ledger sub-module.
+2. The Expiry/Retest column should display the expiry or retest date of the
+displayed control number according to the Stock Ledger sub-module.
+3. The Inhouse Retest column should display the inhouse retest date of the displayed control number according to the Stock Ledger sub- module.
+4. The Available Quantity column should display the current available quantity for the control number according to the Stock Ledger sub-module.
+5. The Factor column should display the calculated factor associated with the control number.
+6. The Requested Quantity column should display the actual required quantity, calculated based on the available quantity needed to fulfill the Quantity per
+Batch value according to the specified factor.
+7. The Quantity per Batch column should display the value obtained after using the formula, Quantity per Batch = Requested Quantity * Factor.
+8. The UOM column should display the(UOM) of the selected material as defined in the RM/PM Setup sub-module.",,,,
+TC-BRD-24,,Display the adjustment of Required Quantity Using Multiple Control Numbers Based on Stock Ledger Priority,"To verify if when a control number does not have sufficient quantity due to low potency or limited stock, the remaining required quantity is adjusted using another control number until the total matches the specified Quantity per Batch. The Control Number is displayed according to the priority defined in the Stock Ledger sub-module.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one material must have associated with the control number data.
+8. The user must be opened the View Control Number pop-up by double-clicking a material row.
+9. The total combined stock must be equal to the Quantity per Batch.","1. Verify that the first control number in the list is selected based on priority from the Stock Ledger.
+2. Check the Requested Quantity column:
+- If the first control number has insufficient quantity, verify the remaining quantity is automatically fulfilled using the next priority control number.
+- Repeat until the total requested quantity equals the Quantity per Batch.",,"1. When a control number should not have sufficient quantity due to low potency or limited stock, the remaining required quantity should be adjusted using another control number until the total matches the specified Quantity per Batch. The
+Control Number should be displayed according to the priority defined in the Stock Ledger sub-module.",,,,
+TC-BRD-25,,"Display of ""Grand Summaries"" Label Below Control Number Details Table.",To verify if the label Grand Summaries are displayed below the Control Number Details Table.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one material must have associated with the control number data.
+8. The user must be opened the View Control Number pop-up by double-clicking a material row.
+",1. Observe the Label Grand Summaries are displayed below the Control Number Details table.,,1. The label Grand Summaries should be displayed below the Control Number Details Table.,,,,
+TC-BRD-26,,Display the total Quantity per Batch Calculation in Grand Summaries Section,To verify if the Total value of the Quantity per Batch is display the sum of all Quantities per Batch selected from different control numbers.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. At least one material must have associated with the control number data.
+8. The user must be opened the View Control Number pop-up by double-clicking a material row.
+","1. Navigate to the Total Quantity per Batch value displayed.
+2. Manually calculate the sum of all Quantity per Batch values from the table.
+3. Compare the manually calculated total with the displayed Total Quantity per Batch value.",,"1. The Total value of the Quantity per Batch should display the sum of all
+Quantities per Batch selected from different control numbers.",,,,
+TC-BRD-27,,Display the Adjusted Excipient Quantity for Inactive Materials from the  Active Material Quantity.,"To verify if the quantity in the parent structure exceeds the total quantity in the child structure for raw materials marked as ‘Active’ in the Raw Materials Requisition Details Table, the excess quantity (which is deducted) is displayed in the Adjusted Excipient Quantity column for materials marked as ‘Inactive’, as defined in the Master Formula of the selected product.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+
+","1. Navigate to the Active Raw Material quantity can be deducted from the parent Structure quantitiy to the child structure quantity.
+2. Navigate to the Adjusted Excipient Quantity column for the corresponding Inactive material.
+3. Observe the excess quantity is dislayed in the Adjusted Excipient Quantity column of the Inactive Raw material from the Selected product in the Master Formula. ",,"1. If the quantity in the parent structure exceeds the total quantity in the child structure for raw materials marked as ‘Active’ in the Raw Materials Requisition Details Table, the excess quantity (which should be deducted) should be displayed in the Adjusted Excipient Quantity column for materials marked as ‘Inactive’, as defined in the Master Formula of the selected product.",,,,
+TC-BRD-28,,Display of Remaining Quantity in Adjusted Excipient Quantity When Child Quantity Exceeds Parent Quantity for Active Materials,"To verify if the quantity in the parent structure is less than the total quantity in the child structure for raw materials marked as ‘Active’ in the Raw Materials Requisition Details Table, the remaining quantity (which is added) is displayed in the Adjusted Excipient Quantity column for materials marked as ‘Inactive’, as defined in the Master Formula of the selected product","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+","1. Navigate to the Active Raw Material quantity can be deducted from the parent Structure quantitiy to the child structure quantity.
+2. Navigate to the Adjusted Excipient Quantity column for the corresponding Inactive material.
+3. Observe the remaining quantity is dislayed in the Adjusted Excipient Quantity column of the Inactive Raw material from the Selected product in the Master Formula. ",,"1. If the quantity in the parent structure is less than the total quantity in the child structure for raw materials marked as ‘Active’ in the Raw Materials Requisition Details Table, the remaining quantity (which should be added) should be displayed in the Adjusted Excipient Quantity column for materials marked as ‘Inactive’, as defined in the Master Formula of the selected product",,,,
+TC-BRD-29,,"Display the Adjust Quantity in Last Control Number of Inactive Materials Based on Required Adjustment
+
+",To verify if the quantity in the raw materials with ‘Inactive’ type is added or deducted accordingly from the last control number mentioned in the child structure of the Raw Materials Requisition Details Table for the materials with ‘Inactive’ type.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+","1. Expand the section for Inactive materials by clicking the Expand(+) icon.
+2. Check if the Adjusted Excipient Quantity is either added to or deducted from the Requested Quantity of the last control number.
+- If positive adjustment, the value should be added.
+- If negative adjustment, the value should be deducted.
+
+
+
+Note: The Adjusted Excipient Quantity for an Inactive material (either positive or negative).",,"1. The quantity in the raw materials with ‘Inactive’ type should be added or
+deducted accordingly from the last control number mentioned in the child
+structure of the Raw Materials Requisition Details Table for the materials with
+‘Inactive’ type.",,,,
+TC-BRD-30,,Functionality of the save button after reviewing the overall page of Requisition Details. ,"To verify if upon clicking on the ‘Save’ button after reviewing the overall page of Requisition Detail, an E-Signature pop-up box should be displayed.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.","1. Click on the Save button.
+2. Observe.",,"1. Upon clicking on the ‘Save’ button after reviewing the overall page of Requisition Detail, an E-Signature pop-up box should be displayed.",,,,
+TC-BRD-31,,"Display Success Dialog box after clicking on the ""Authorizing"" button in the E-Signature pop-up box.","To verify if upon clicking on the ‘Authorize’ button after filling all the mandatory fields in the E-Signature pop-up box, a success dialog box is displayed with a message stating “Batch Requisition Details has been successfully saved by QA.”.","1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. The E-Signature pop-up box must be displayed after clicking on the ‘Save’ button.
+8. All mandatory fields in the E-Signature form must be filled.","1. Click on the Save button.
+2. Click the Authorize button.
+3. Observe.",,"1. Upon clicking on the ‘Authorize’ button after filling all the mandatory fields in the E-Signature pop-up box, a success dialog box should be displayed with a message stating “Batch Requisition Details has been successfully saved by QA.”.",,,,
+TC-BRD-32,,Display the Material Requisition Number Generation After Saving Requisition Details popup form.,To verify if a Material Requisition Number is generated according to the logic set in the Configuration Number Logic sub-module after successfully saving the Batch Requisition Details.,"1. User with designated role must be logged in to the software.
+2. Production Processing module must be selected.
+3. Requisition Dispensing sub-module must be selected.
+4. Batch Requisition Details menu must be selected.
+5. User must be in Batch Requisition Details page.
+6. User must be in Requisition Details popup form.
+7. The E-Signature pop-up box must be displayed after clicking on the ‘Save’ button.
+8. All mandatory fields in the E-Signature form must be filled.","1. Click on the Save button.
+2. Enter valid credentials in the E-Signature pop-up and click on the Authorize button.
+3. Observe the displayed Material Requisition Number.
+
+",,1. A Material Requisition Number should be generated according to the logic set in the Configuration Number Logic sub-module after successfully saving the Batch Requisition Details.,,,,
