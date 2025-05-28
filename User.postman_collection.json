@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "84a2157c-aeb5-46a5-8469-56ea484f7629",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42141615"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const jsonData = pm.response.json();\r",
+							"pm.test(\"status code is 200\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response contains 'code'\",function(){\r",
+							"    pm.expect(jsonData).to.have.property('code');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response contains 'code'\",function(){\r",
+							"    pm.expect(jsonData).to.have.property('type');\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 300ms\",function(){\r",
+							"    pm.expect(pm.response.responseTime).to.be.lessThan(300);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"const firstName = [ \"John\",\"Shyam\",\"Ram\",\"chris\",\"Robert\",\"James\",\"Daniel\",\"Michael\"];\r",
+							"const lastName = [\"Johnson\",\"Shah\",\"Sita\",\"Shrestha\",\"Pradhan\",\"Poudel\",\"Davis\",\"Wilson\"];\r",
+							"\r",
+							"const firstName = firstName[Math.floor(Math.randon()*firstName.length)];\r",
+							"const lastName = lastName[Math.floor(Math.randon()*lastName.length)];\r",
+							"\r",
+							"//Generate email using random numbers\r",
+							"\r",
+							"const random = Math.floor(Math.random()*10000);\r",
+							"const email = '${firstName.toLowerCase()}${lastName.toLowerCase()}${randomNum}@example.com';\r",
+							"pm.collectionVariables.set(\"firstName\",firstName);\r",
+							"pm.collectionVariables.set(\"lastName\",lastName);\r",
+							"pm.collectionVariables.set(\"email\",email);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"username\": \"sahbivek\",\r\n    \"firstName\": \"bivek\",\r\n    \"lastName\": \"sah\",\r\n    \"email\": \"biveksah65@gmail.com\",\r\n    \"password\": \"9812253757ab\",\r\n    \"phone\": \"9812253757\",\r\n    \"userStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/:username",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": "sahbivek"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User by user name",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"username\": \"sahbivek\",\r\n    \"firstName\": \"bivek\",\r\n    \"lastName\": \"shah\",\r\n    \"email\": \"biveksah65@gmail.com\",\r\n    \"password\": \"9812253757ab\",\r\n    \"phone\": \"9865341554\",\r\n    \"userStatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/:username",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": "sahbivek"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by Username",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/:username",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						":username"
+					],
+					"variable": [
+						{
+							"key": "username",
+							"value": "sahbivek"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
